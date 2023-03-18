@@ -30,9 +30,3 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
 }
 
-
-
-// refs.buttonStartEl.style.width = "80px";
-// refs.buttonStartEl.style.height = "40px";
-// refs.buttonStopEl.style.width = "80px";
-// refs.buttonStopEl.style.height = "40px";
