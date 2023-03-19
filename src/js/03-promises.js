@@ -7,8 +7,7 @@ const refs = {
   amountEl: document.querySelector('input[name="amount"]')
 };
 
-let delay = 0;
-let position = 0;
+
 
 refs.formEL.addEventListener('submit', hendlePromisSubmit);
 
@@ -17,6 +16,9 @@ function hendlePromisSubmit(e) {
   const quantityPromis = Number(refs.amountEl.value);
   const stepPromis = Number(refs.stepEl.value);
   const firstDelayPromis = Number(refs.delayEl.value);
+
+  let delay = 0;
+let position = 0;
 
   for (let i = 0; i < quantityPromis; i += 1){
     delay = firstDelayPromis + stepPromis * i;
