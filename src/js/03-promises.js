@@ -5,7 +5,10 @@ const refs = {
   delayEl: document.querySelector('input[name="delay"]'),
   stepEl: document.querySelector('input[name="step"]'),
   amountEl: document.querySelector('input[name="amount"]')
-}
+};
+
+let delay = 0;
+let position = 0;
 
 refs.formEL.addEventListener('submit', hendlePromisSubmit);
 
